@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+* {
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Ubuntu, sans-serif;
+  background-color: #59B390;
+}
+
+th, td {
+  padding: 8px 6px;
+}
+
+thead th:first-of-type,
+tbody td:first-of-type,
+tfoot th:first-of-type {
+  padding-left: 0;
+}
+
+thead th:last-of-type,
+tbody td:last-of-type,
+tfoot td:last-of-type {
+  padding-right: 0;
+}
+
+.price {
+  text-align: right;
+}

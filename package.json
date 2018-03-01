@@ -2,7 +2,7 @@
   "name": "shoping-cart",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/kuroikyu/shopping-cart",
+  "homepage": "https://kuroikyu.com/shopping-cart",
   "dependencies": {
     "feather-icons-react": "^0.1.4",
     "prop-types": "^15.6.1",

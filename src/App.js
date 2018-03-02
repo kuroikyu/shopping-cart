@@ -1,17 +1,34 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
+import 'normalize.css';
 
 import ItemsContainer from './components/ItemsContainer';
 import CartContainer from './components/CartContainer';
 
+const mobileWidth = '720px';
+
+const AppContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  @media (max-width: ${mobileWidth}) {
+    flex-direction: column;
+  }
+`;
+
 const ShoppingArea = styled.div`
+  flex-grow: 1;
   width: 66vw;
   padding: 0 40px;
+  @media (max-width: ${mobileWidth}) {
+    width: 100%;
+  }
 `;
 
 const CartArea = styled.div`
   flex-grow: 1;
   padding: 0 40px;
+  height: 100%;
   background-color: #152B3C;
   color: #F0DDAA;
 `;
@@ -26,17 +43,11 @@ const MainTitle = styled.h1`
 const Separator = styled.hr`
   border: none;
   box-shadow: 0 0 0 2px #152B3C;
-  margin-bottom: 80px;
+  margin-bottom: 110px;
 `;
 
 const LightSeparator = styled(Separator)`
   box-shadow: 0 0 0 2px #F0DDAA;
-`;
-
-const AppContainer = styled.div`
-  display: flex;
-  flex-direction: row;
-  height: 100%;
 `;
 
 const itemsSource = [

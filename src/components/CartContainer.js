@@ -7,17 +7,27 @@ import Feather from 'feather-icons-react';
 const Container = styled.div`
   padding: 25px 25px;
   background-color: hsl(206.2, 48.1%, 20.9%);
+  margin-bottom: 50px;
 `;
 const Button = styled.button`
   width: 100%;
   border: 0;
   margin-top: 50px;
   padding: 12px 10px;
-  background: #59B390;
+  background: #F0DDAA;
   text-transform: uppercase;
   font-size: 1.25em;
   font-family: Ubuntu, sans-serif;
+
+  &:matches(:focus, :hover) {
+    box-shadow: 0 0 0 4px #F0DDAA inset,
+    0 0 0 6px #152B3C inset;
+    outline: none;
+  }
 `;
+
+// #152B3C
+// #59B390
 
 function curr(nummy) {
   return nummy.toLocaleString('en-GB', { style: 'currency', currency: 'GBP' });

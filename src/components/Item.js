@@ -23,14 +23,9 @@ const ItemContainer = styled.div`
   align-items: center;
   font-family: Ubuntu, sans-serif;
 
-  button {
-    transition: all 150ms ease-in-out;
-  }
-
-  &:hover button {
-    color: #f1f1f1;
-    box-shadow: 0 6px 10px -3px rgba(0,0,0,0.4);
-    transform: translateY(-3px);
+  &:hover {
+    box-shadow: 0 0 0 3px hsl(156.7, 37.2%, 57.5%) inset,
+    0 0 0 5px hsla(206.2,48.1%,15.9%,0.75) inset;
   }
 `;
 
@@ -49,6 +44,11 @@ const AddToCart = styled.button`
   padding: 10px 20px;
   border: none;
   font-family: Ubuntu, sans-serif;
+  &:focus {
+    box-shadow: 0 0 0 3px #152B3C inset,
+    0 0 0 4px #F0DDAA inset;
+    outline: none;
+  }
 `;
 
 export default class Item extends PureComponent {

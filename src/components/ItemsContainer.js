@@ -9,6 +9,10 @@ const Container = styled.div`
   grid-template-columns: 1fr 1fr;
   background-color: hsl(156.7, 37.2%, 57.5%);
   padding: 5px 10px;
+  margin-bottom: 50px;
+  @media (max-width: 1000px) {
+    grid-template-columns: 1fr;
+  }
 `;
 
 export default class ItemsContainer extends PureComponent {

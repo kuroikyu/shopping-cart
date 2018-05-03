@@ -2,7 +2,7 @@
   "name": "shoping-cart",
   "version": "1.0.0",
   "private": true,
-  "homepage": "https://kuroikyu.com/shopping-cart",
+  "homepage": "https://projects.kuroikyu.com/",
   "dependencies": {
     "feather-icons-react": "^0.1.4",
     "normalize.css": "^8.0.0",
